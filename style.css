@@ -1,0 +1,430 @@
+@font-face {
+  font-family: "Commissioner";
+  src: url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("https://fonts.googleapis.com/css2?family=Commissioner:wght@700&display=swap") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Commissioner", sans-serif;
+}
+
+section {
+  width: 90%;
+  margin-left: 5%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.left {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left h2 {
+  font-size: 30px;
+}
+
+button {
+  font-size: 14px;
+  font-weight: bolder;
+  background: #3cb4ac;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+body {
+  position: relative;
+}
+
+.bookmarkDiv .bookmarkText {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: #147b74;
+}
+
+button:focus {
+  outline: none;
+}
+
+.showEnterPledge {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.focused {
+  border: 1px solid #3cb4ac !important;
+}
+
+.thankSupport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(54, 54, 54, 0.4);
+  z-index: 10;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.thankSupport section {
+  margin-top: 300px;
+  margin-left: 0;
+  height: 380px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.thankSupport section svg {
+  margin-bottom: 20px;
+}
+
+.thankSupport section h2 {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.thankSupport section p {
+  margin-bottom: 40px;
+  color: #7a7a7a;
+}
+
+.choosePledge {
+  height: 100%;
+}
+
+.choosePledge .pledgeHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.choosePledge > section {
+  height: auto;
+  margin-top: 150px;
+}
+
+.choosePledge > section section {
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid gray;
+}
+
+.choosePledge > section section .sectionHeader {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.choosePledge > section section .sectionHeader p {
+  color: #3cb4ac;
+}
+
+.choosePledge > section section .sectionHeader h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.choosePledge > section section .sectionHeader input {
+  float: left;
+  height: 20px;
+  width: 20px;
+}
+
+.choosePledge > section section p {
+  margin: 0;
+}
+
+.choosePledge > section section .left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.choosePledge > section section .left h2 {
+  margin-top: 35px;
+}
+
+header {
+  width: 100%;
+  height: 350px;
+  background: url("./images/image-hero-mobile.jpg") center;
+  background-size: cover;
+}
+
+.headerLogo {
+  margin: 30px 0 0 10px;
+}
+
+.hamburgerMenu {
+  float: right;
+  margin: 30px 10px 0 0;
+}
+
+.links {
+  display: none;
+}
+
+.dropdownContainer {
+  position: absolute;
+  display: none;
+  top: 3%;
+  left: 5%;
+  width: 90%;
+}
+
+.dropdownContainer ul {
+  background: white;
+  list-style-type: none;
+  height: auto;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.dropdownContainer ul :nth-child(2) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.dropdownContainer ul li {
+  line-height: 3;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+}
+
+.description {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  z-index: 1;
+}
+
+.description > svg {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.description h2 {
+  margin-bottom: 10px;
+}
+
+.description p {
+  color: #7a7a7a;
+}
+
+.description .bookmark {
+  width: 100%;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.description .bookmark svg .marked {
+  fill: #147b74;
+}
+
+.description .bookmark svg .innerMarked {
+  fill: white;
+}
+
+.priceTarget h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.priceTarget p {
+  color: #7a7a7a;
+}
+
+.priceTarget .line {
+  height: 1px;
+  width: 90px;
+  background: #bdbdbd;
+  margin: 15px 0;
+}
+
+.priceTarget .progressBar {
+  border-radius: 8px;
+  margin: 25px 0;
+  height: 15px;
+  width: 90%;
+  background: lightgray;
+}
+
+.priceTarget .progressBar > div {
+  border-radius: 8px;
+  height: 15px;
+  width: 89%;
+  background: #3cb4ac;
+}
+
+.about {
+  margin-top: 50px;
+  text-align: start;
+}
+
+.about h2 {
+  font-size: 16px;
+  margin: 10px 0;
+  margin-right: auto;
+}
+
+.about p {
+  color: #7a7a7a;
+  margin: 10px 0;
+}
+
+.about section {
+  text-align: start;
+  position: relative;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+}
+
+.about section p {
+  font-size: 14px;
+}
+
+.about button {
+  padding: 15px 20px;
+  margin-right: auto;
+}
+
+.about .outOfStock {
+  background: #7a7a7a;
+}
+
+.about .leftWrapper {
+  margin-right: auto;
+}
+
+.about .left h2 {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.disabled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(206, 206, 206, 0.4);
+}
+
+.enterPledge {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid #7a7a7a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.enterPledge .pledgeAmountWrapper {
+  border: 1px solid gray;
+  border-radius: 30px;
+  width: 120px;
+  padding: 10px 10px;
+  margin: 10px 0;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enterPledge .pledgeAmount {
+  border: none;
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+}
+
+.enterPledge label {
+  color: #7a7a7a;
+  float: left;
+  font-size: 20px;
+  border-radius: 10px 0 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
